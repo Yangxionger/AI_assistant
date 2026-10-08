@@ -19,21 +19,21 @@
 
 ```mermaid
 flowchart TD
-    API[FastAPI main.py] --> Upload[上传知识资料]
-    Upload --> Index[rag.py 增量入库]
-    Index --> DB[本地 Qdrant]
-    API --> Chat[/chat 直接 LLM]
-    API --> Ask[/ask 本地 RAG]
-    API --> Agent[/agent LangGraph]
-    Ask --> Retrieve[embedding → Top-10 → reranker Top-3 → gate]
+    API["FastAPI main.py"] --> Upload["上传知识资料"]
+    Upload --> Index["rag.py 增量入库"]
+    Index --> DB["本地 Qdrant"]
+    API --> Chat["/chat 直接 LLM"]
+    API --> Ask["/ask 本地 RAG"]
+    API --> Agent["/agent LangGraph"]
+    Ask --> Retrieve["embedding → Top-10 → reranker Top-3 → gate"]
     Agent --> Retrieve
     DB --> Retrieve
-    Retrieve -->|hit| Local[本地 context → llm.py → DeepSeek]
-    Retrieve -->|no_hit 且为 /ask| Reject[固定无资料提示]
-    Retrieve -->|no_hit 且为 /agent| Web[web_search.py → Tavily / DDGS]
-    Web --> Evidence{有足够摘要证据?}
-    Evidence -->|有| WebAnswer[LangGraph LLM → Web answer + sources]
-    Evidence -->|无| None[none + 空 sources]
+    Retrieve -->|"hit"| Local["本地 context → llm.py → DeepSeek"]
+    Retrieve -->|"no_hit 且为 /ask"| Reject["固定无资料提示"]
+    Retrieve -->|"no_hit 且为 /agent"| Web["web_search.py → Tavily / DDGS"]
+    Web --> Evidence{"有足够摘要证据?"}
+    Evidence -->|"有"| WebAnswer["LangGraph LLM → Web answer + sources"]
+    Evidence -->|"无"| None["none + 空 sources"]
 ```
 
 启动时 `main.py` 导入 `llm.py` 和 `rag.py`：读取环境配置，加载 embedding/reranker，打开本地 Qdrant 并执行 `sync_knowledge()`。LangGraph 随后编译状态图。首次运行可能需要下载检索模型。
