@@ -1,0 +1,357 @@
+[
+  {
+    "id": "p01",
+    "label": "positive",
+    "question": "浏览器页面和接口端口不同，被拦住了请求，FastAPI里要配置什么？",
+    "expected_source": "fastapi.txt",
+    "evidence_terms": [
+      "CORS",
+      "CORSMiddleware"
+    ]
+  },
+  {
+    "id": "p02",
+    "label": "positive",
+    "question": "我不想手写接口说明，FastAPI能自动提供什么文档工具？",
+    "expected_source": "fastapi.txt",
+    "evidence_terms": [
+      "Swagger"
+    ]
+  },
+  {
+    "id": "p03",
+    "label": "positive",
+    "question": "提交的JSON不符合请求模型，为什么会出现422？",
+    "expected_source": "fastapi.txt",
+    "evidence_terms": [
+      "422",
+      "校验"
+    ]
+  },
+  {
+    "id": "p04",
+    "label": "positive",
+    "question": "后端怎样约束用户提交的JSON结构？",
+    "expected_source": "fastapi.txt",
+    "evidence_terms": [
+      "Pydantic",
+      "校验"
+    ]
+  },
+  {
+    "id": "p05",
+    "label": "positive",
+    "question": "在FastAPI中怎么声明一个读取接口和一个提交接口？",
+    "expected_source": "fastapi.txt",
+    "evidence_terms": [
+      "@app.get",
+      "@app.post"
+    ]
+  },
+  {
+    "id": "p06",
+    "label": "positive",
+    "question": "前端的问题怎样经FastAPI交给大模型并拿到结果？",
+    "expected_source": "fastapi.txt",
+    "evidence_terms": [
+      "大模型",
+      "JSON"
+    ]
+  },
+  {
+    "id": "p07",
+    "label": "positive",
+    "question": "文本切块过大和过小分别会有什么检索问题？",
+    "expected_source": "fastapi.txt",
+    "evidence_terms": [
+      "Chunk",
+      "语义"
+    ]
+  },
+  {
+    "id": "p08",
+    "label": "positive",
+    "question": "为什么知识库文档不是整篇生成一个向量，而是拆成小块？",
+    "expected_source": "fastapi.txt",
+    "evidence_terms": [
+      "chunk",
+      "Embedding"
+    ]
+  },
+  {
+    "id": "p09",
+    "label": "positive",
+    "question": "代码已经commit但网络断了没push，本地历史还在吗？",
+    "expected_source": "git.txt",
+    "evidence_terms": [
+      "本地",
+      "commit"
+    ]
+  },
+  {
+    "id": "p10",
+    "label": "positive",
+    "question": "git add、commit、push各自操作哪个阶段？",
+    "expected_source": "git.txt",
+    "evidence_terms": [
+      "暂存区",
+      "远程"
+    ]
+  },
+  {
+    "id": "p11",
+    "label": "positive",
+    "question": "怎么只提交这个功能的改动，让提交记录更清楚？",
+    "expected_source": "git.txt",
+    "evidence_terms": [
+      "暂存",
+      "功能"
+    ]
+  },
+  {
+    "id": "p12",
+    "label": "positive",
+    "question": "开发新功能时如何隔离改动，完成后怎么合回去？",
+    "expected_source": "git.txt",
+    "evidence_terms": [
+      "分支",
+      "merge"
+    ]
+  },
+  {
+    "id": "p13",
+    "label": "positive",
+    "question": "接口返回200、404和500分别意味着什么？",
+    "expected_source": "http.txt",
+    "evidence_terms": [
+      "200",
+      "404",
+      "500"
+    ],
+    "expected_sources": [
+      "http.txt",
+      "fastapi.txt"
+    ]
+  },
+  {
+    "id": "p14",
+    "label": "positive",
+    "question": "后端请求外部服务失败，为什么浏览器最后看到的是500？",
+    "expected_source": "http.txt",
+    "evidence_terms": [
+      "外部 API",
+      "异常"
+    ]
+  },
+  {
+    "id": "p15",
+    "label": "positive",
+    "question": "查资源和提交数据一般分别选哪种HTTP方法？",
+    "expected_source": "http.txt",
+    "evidence_terms": [
+      "GET",
+      "POST"
+    ]
+  },
+  {
+    "id": "p16",
+    "label": "positive",
+    "question": "想在Python列表的末尾增加一个元素，要怎么做？",
+    "expected_source": "python.txt",
+    "evidence_terms": [
+      "append"
+    ]
+  },
+  {
+    "id": "p17",
+    "label": "positive",
+    "question": "Python存名字和年龄这种对应关系，适合用什么结构？",
+    "expected_source": "python.txt",
+    "evidence_terms": [
+      "字典",
+      "键值"
+    ]
+  },
+  {
+    "id": "p18",
+    "label": "positive",
+    "question": "读取一个UTF-8文本文件，pathlib有什么方便方法？",
+    "expected_source": "python.txt",
+    "evidence_terms": [
+      "read_text",
+      "utf-8"
+    ]
+  },
+  {
+    "id": "p19",
+    "label": "positive",
+    "question": "文件不存在时怎样避免Python程序直接崩掉？",
+    "expected_source": "python.txt",
+    "evidence_terms": [
+      "try/except",
+      "文件不存在"
+    ]
+  },
+  {
+    "id": "p20",
+    "label": "positive",
+    "question": "RAG为什么要在生成答案之前找外部资料？",
+    "expected_source": "rag.txt",
+    "evidence_terms": [
+      "知识库",
+      "上下文"
+    ]
+  },
+  {
+    "id": "p21",
+    "label": "positive",
+    "question": "检索里Top-K和threshold分别控制什么？",
+    "expected_source": "rag.txt",
+    "evidence_terms": [
+      "Top-K",
+      "阈值"
+    ]
+  },
+  {
+    "id": "p22",
+    "label": "positive",
+    "question": "FAISS里的IndexFlatIP和HNSW在搜索方式上有何区别？",
+    "expected_source": "rag.txt",
+    "evidence_terms": [
+      "精确搜索",
+      "近似"
+    ]
+  },
+  {
+    "id": "n01",
+    "label": "negative",
+    "question": "MySQL发生死锁时如何定位事务并解决锁顺序问题？",
+    "absence_reason": "无MySQL事务资料"
+  },
+  {
+    "id": "n02",
+    "label": "negative",
+    "question": "Linux inode耗尽而磁盘还有空间时应该怎么排查？",
+    "absence_reason": "无Linux文件系统资料"
+  },
+  {
+    "id": "n03",
+    "label": "negative",
+    "question": "如何计算TCP拥塞窗口在慢启动中的变化？",
+    "absence_reason": "无TCP拥塞控制资料"
+  },
+  {
+    "id": "n04",
+    "label": "negative",
+    "question": "Java垃圾收集器G1如何决定Mixed GC的触发时间？",
+    "absence_reason": "无Java JVM资料"
+  },
+  {
+    "id": "n05",
+    "label": "negative",
+    "question": "C++的移动构造函数如何配合右值引用减少拷贝？",
+    "absence_reason": "无C++资料"
+  },
+  {
+    "id": "n06",
+    "label": "negative",
+    "question": "CSS Grid如何让一个元素跨三列并响应式布局？",
+    "absence_reason": "无前端布局资料"
+  },
+  {
+    "id": "n07",
+    "label": "negative",
+    "question": "操作系统如何避免银行家算法中的不安全状态？",
+    "absence_reason": "无操作系统算法资料"
+  },
+  {
+    "id": "n08",
+    "label": "negative",
+    "question": "红黑树删除节点后有哪些旋转和重新染色情形？",
+    "absence_reason": "无数据结构资料"
+  },
+  {
+    "id": "n09",
+    "label": "negative",
+    "question": "如何用PyTorch实现Transformer多头注意力？",
+    "absence_reason": "无PyTorch实现资料"
+  },
+  {
+    "id": "n10",
+    "label": "negative",
+    "question": "训练QLoRA时NF4量化误差如何计算？",
+    "absence_reason": "无QLoRA资料"
+  },
+  {
+    "id": "n11",
+    "label": "negative",
+    "question": "Git rebase冲突时如何使用reflog恢复丢失提交？",
+    "absence_reason": "Git基础没有rebase/reflog步骤"
+  },
+  {
+    "id": "n12",
+    "label": "negative",
+    "question": "FastAPI如何实现OAuth2刷新令牌轮换与撤销？",
+    "absence_reason": "FastAPI基础没有OAuth2资料"
+  },
+  {
+    "id": "n13",
+    "label": "negative",
+    "question": "Python装饰器怎样保留闭包变量并处理nonlocal？",
+    "absence_reason": "Python基础没有装饰器闭包资料"
+  },
+  {
+    "id": "n14",
+    "label": "negative",
+    "question": "HTTP/2的HPACK动态表如何编码重复请求头？",
+    "absence_reason": "HTTP基础没有HTTP2/HPACK资料"
+  },
+  {
+    "id": "n15",
+    "label": "negative",
+    "question": "RAG怎样训练ColBERT晚期交互检索模型？",
+    "absence_reason": "RAG基础没有ColBERT训练资料"
+  },
+  {
+    "id": "n16",
+    "label": "negative",
+    "question": "Python asyncio任务取消如何传播CancelledError？",
+    "absence_reason": "无asyncio取消资料"
+  },
+  {
+    "id": "n17",
+    "label": "negative",
+    "question": "FastAPI上传文件时怎样进行病毒检测和恶意PDF隔离？",
+    "absence_reason": "无安全扫描方案资料"
+  },
+  {
+    "id": "n18",
+    "label": "negative",
+    "question": "请给出HNSW的M和efConstruction在百万向量下的最优参数及内存估算。",
+    "absence_reason": "资料仅提及HNSW，未提供参数估算"
+  },
+  {
+    "id": "n19",
+    "label": "negative",
+    "question": "怎么给HTTP接口设计支付幂等键以及跨库事务补偿？",
+    "absence_reason": "无支付幂等跨库事务资料"
+  },
+  {
+    "id": "n20",
+    "label": "negative",
+    "question": "怎么把Git仓库历史里的泄漏密钥彻底移除？",
+    "absence_reason": "无历史重写密钥清理资料"
+  },
+  {
+    "id": "n21",
+    "label": "negative",
+    "question": "量子纠缠实验怎样检验贝尔不等式？",
+    "absence_reason": "无物理资料"
+  },
+  {
+    "id": "n22",
+    "label": "negative",
+    "question": "做戚风蛋糕时蛋白打发不足该怎么补救？",
+    "absence_reason": "无烹饪资料"
+  }
+]

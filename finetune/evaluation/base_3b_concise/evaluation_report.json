@@ -1,0 +1,34 @@
+{
+  "status": "success",
+  "started_at": "2026-10-06T01:29:23",
+  "adapter_loaded": false,
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "hf_home": "D:\\Code\\huggingface_cache",
+  "hf_hub_cache": "D:\\Code\\huggingface_cache\\hub",
+  "snapshot": "D:\\Code\\huggingface_cache\\hub\\models--Qwen--Qwen2.5-3B-Instruct\\snapshots\\aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "summary": {
+    "successful_generations": 18,
+    "natural_eos_count": 18,
+    "max_new_tokens_stop_count": 0,
+    "mean_generated_tokens_including_stop": 199.78,
+    "mean_answer_characters": 351.78,
+    "mean_non_whitespace_characters": 335.28,
+    "within_200_350_characters_count": 9,
+    "empty_answers": 0,
+    "flag_counts": {},
+    "total_inference_seconds": 164.39
+  },
+  "cuda_available": true,
+  "loaded_in_4bit": true,
+  "actual_tensor_devices": [
+    "cuda:0"
+  ],
+  "same_18_original_questions_and_template_verified": true,
+  "generation_config_unchanged": true,
+  "eos_diagnostics_file": "D:\\Code\\huawei-ai-24weeks\\projects\\ai-study-assistant\\finetune\\evaluation\\base_3b_concise\\eos_diagnostics.json",
+  "previous_results_and_formal_v1_unchanged": true,
+  "elapsed_seconds_including_load_and_diagnostics": 199.88,
+  "torch_peak_allocated_mib": 2141.22,
+  "torch_peak_reserved_mib": 2192.0,
+  "whole_gpu_peak_sampled_mib": 3891
+}

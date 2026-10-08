@@ -1,0 +1,83 @@
+{
+  "original_point_count": 16,
+  "original_sources": [
+    "fastapi.txt",
+    "git.txt",
+    "http.txt",
+    "python.txt",
+    "rag.txt"
+  ],
+  "txt_upload": {
+    "source": "uploads/upload_smoke_bb2fb17f2006.txt",
+    "status": "indexed",
+    "chunks": 3
+  },
+  "points_after_txt": 19,
+  "ask": {
+    "level": "beginner",
+    "answer": "玄鸟学习缓存协议的刷新口令是：**星河-7426**。  \n缓存有效期是：**37 分钟**。\n\n简单理解：  \n“缓存”就像你把常用课本放在书桌上，暂时不用每次跑图书馆。  \n“刷新口令”就像给这张书桌重新续期的暗号，输入正确后，缓存可以继续使用。  \n“有效期 37 分钟”表示从刷新或生成缓存开始算，大约 37 分钟后这个缓存就过期了。\n\n所以答案是：\n\n- **刷新口令：星河-7426**\n- **缓存有效期：37 分钟**",
+    "retrieved_context": "[uploads/upload_smoke_bb2fb17f2006.txt]\n玄鸟学习缓存协议是一份计算机学习资料。\n玄鸟学习缓存协议的刷新口令是“星河-7426”，缓存有效期为37分钟。\n缓存过期后，客户端先调用flush_learning_cache，再重新加载课程索引。\n缓存过期后先清理课程索引，再重新读取学习资料。\n缓存过期后先清理课程索引，再重新读取学习资料。\n缓存过期后先清理课程索引，再重新读取学习资料。\n缓存过期后先清理课程索引，再重新读取学习资料。\n缓存过期\n[uploads/upload_smoke_bb2fb17f2006.txt]\n课程索引，再重新读取学习资料。\n缓存过期后先清理课程索引，再重新读取学习资料。\n缓存过期后先清理课程索引，再重新读取学习资料。\n缓存过期后先清理课程索引，再重新读取学习资料。\n[uploads/upload_smoke_bb2fb17f2006.txt]\n过期后先清理课程索引，再重新读取学习资料。\n缓存过期后先清理课程索引，再重新读取学习资料。\n缓存过期后先清理课程索引，再重新读取学习资料。\n缓存过期后先清理课程索引，再重新读取学习资料。\n缓存过期后先清理课程索引，再重新读取学习资料。\n缓存过期后先清理课程索引，再重新读取学习资料。\n缓存过期后先清理课程索引，再重新读取学习资料。\n缓存过期后先清理课程索引，再重新读取学习资料。\n缓存过期后先清理课程",
+    "sources": [
+      {
+        "source": "uploads/upload_smoke_bb2fb17f2006.txt",
+        "page": null
+      }
+    ],
+    "retrieval_status": "hit"
+  },
+  "ask_used_real_llm": true,
+  "repeat_upload": {
+    "source": "uploads/upload_smoke_bb2fb17f2006.txt",
+    "status": "unchanged",
+    "chunks": 3
+  },
+  "repeat_embedding_calls": 0,
+  "points_after_repeat": 19,
+  "embedding_failure_preserved_old_points_and_state": true,
+  "update_after_retry": {
+    "source": "uploads/upload_smoke_bb2fb17f2006.txt",
+    "status": "updated",
+    "chunks": 1
+  },
+  "points_after_update": 17,
+  "markdown_upload": {
+    "source": "uploads/上传_smoke_bb2fb17f2006.md",
+    "status": "indexed",
+    "chunks": 1
+  },
+  "agent_source_lists_match_api": true,
+  "invalid_upload_checks": [
+    {
+      "filename": "bad.pdf",
+      "status": 400
+    },
+    {
+      "filename": "../bad.txt",
+      "status": 400
+    },
+    {
+      "filename": "CON.txt",
+      "status": 400
+    },
+    {
+      "filename": "empty.txt",
+      "status": 400
+    },
+    {
+      "filename": "invalid.txt",
+      "status": 400
+    },
+    {
+      "filename": "nul.txt",
+      "status": 400
+    },
+    {
+      "filename": "large.txt",
+      "status": 413
+    }
+  ],
+  "status": "passed",
+  "test_files_cleaned_up": true,
+  "original_knowledge_preserved": true,
+  "finetune_file_sizes_and_mtimes_unchanged": true
+}

@@ -1,0 +1,15 @@
+fastapi
+python-multipart
+pypdf>=6,<7
+uvicorn
+pydantic
+openai
+python-dotenv
+sentence-transformers
+qdrant-client
+langchain
+langchain-core
+langchain-openai
+langgraph
+ddgs>=9,<10
+httpx

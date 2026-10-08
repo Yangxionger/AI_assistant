@@ -1,0 +1,69 @@
+{
+  "pdf_upload": {
+    "pages": 3,
+    "page_2_chunks": 4
+  },
+  "pdf_ask": {
+    "level": "beginner",
+    "answer": "可以把它想成“备用钥匙”和“再次尝试的等待时间”。\n\n- **恢复口令**：类似备用钥匙或验证码，用于恢复/解锁。  \n- **重试间隔**：如果输入失败，需要等一段时间才能再次尝试，类似门锁输错密码后要等一会儿再输。\n\n根据知识库资料，**霜桥学习索引协议**的：\n\n- **恢复口令是：霜桥-8259**\n- **重试间隔是：29秒**\n\n也就是说，需要恢复时使用口令“霜桥-8259”；如果尝试失败，要等待 29 秒后再重试。",
+    "retrieved_context": "[uploads/citation_a3eece265dc3.pdf，第2页]\n学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n[uploads/citation_a3eece265dc3.pdf，第2页]\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议\n[uploads/citation_a3eece265dc3.pdf，第2页]\n重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒",
+    "sources": [
+      {
+        "source": "uploads/citation_a3eece265dc3.pdf",
+        "page": 2
+      }
+    ],
+    "retrieval_status": "hit"
+  },
+  "same_page_hits": 3,
+  "deduplicated_sources": 1,
+  "txt_ask": {
+    "level": "beginner",
+    "answer": "“恢复口令”可以理解成一把**备用钥匙**：当课程缓存需要恢复访问时，用它来验证身份。就像忘记储物柜密码时，用备用密码打开。\n\n根据知识库资料：\n\n**晴岚课程缓存的恢复口令是：`晴岚-4618`**\n\n注意：资料里还出现了其他恢复口令，但它们对应的是别的协议/内容，不要和“晴岚课程缓存”混用。",
+    "retrieved_context": "[uploads/citation_a3eece265dc3.txt]\n晴岚课程缓存的恢复口令是晴岚-4618。这是独有的计算机学习资料。\n[uploads/citation_a3eece265dc3.pdf，第2页]\n学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n[uploads/citation_a3eece265dc3.pdf，第2页]\n令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-825",
+    "sources": [
+      {
+        "source": "uploads/citation_a3eece265dc3.txt",
+        "page": null
+      },
+      {
+        "source": "uploads/citation_a3eece265dc3.pdf",
+        "page": 2
+      }
+    ],
+    "retrieval_status": "hit"
+  },
+  "md_ask": {
+    "level": "beginner",
+    "answer": "墨羽课程队列的恢复口令是：**墨羽-7392**。\n\n简单理解：恢复口令就像你家的“备用钥匙”。当你忘记原来的进入方式，或者系统需要确认你确实有权限恢复某个学习任务时，就要用它来验证身份。\n\n从技术上说，它是系统提前设置好的一串验证字符，和“墨羽课程队列”这个学习任务绑定在一起。不同课程或队列的口令通常不一样，所以不要把它和其他口令混用。\n\n你只需要记住：**墨羽课程队列 → 墨羽-7392**。",
+    "retrieved_context": "[uploads/citation_a3eece265dc3.md]\n墨羽课程队列的恢复口令是墨羽-7392。这是独有的计算机学习资料。\n[uploads/citation_a3eece265dc3.txt]\n晴岚课程缓存的恢复口令是晴岚-4618。这是独有的计算机学习资料。\n[uploads/citation_a3eece265dc3.pdf，第2页]\n学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。\n霜桥学习索引协议的恢复口令是霜桥-8259，重试间隔为29秒。",
+    "sources": [
+      {
+        "source": "uploads/citation_a3eece265dc3.md",
+        "page": null
+      },
+      {
+        "source": "uploads/citation_a3eece265dc3.txt",
+        "page": null
+      },
+      {
+        "source": "uploads/citation_a3eece265dc3.pdf",
+        "page": 2
+      }
+    ],
+    "retrieval_status": "hit"
+  },
+  "agent_metadata_preserved": true,
+  "no_candidate_branch_controlled": {
+    "level": "beginner",
+    "answer": "当前知识库中没有找到足够相关的资料。",
+    "retrieved_context": "",
+    "sources": [],
+    "retrieval_status": "no_hit"
+  },
+  "invented_llm_citation_ignored": true,
+  "status": "passed",
+  "original_knowledge_preserved": true,
+  "finetune_unchanged": true,
+  "test_uploads_cleaned": true
+}

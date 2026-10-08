@@ -1,0 +1,303 @@
+{
+  "status": "passed",
+  "threshold": 0.5,
+  "activation_fn": "Sigmoid",
+  "calibrated_rows": [
+    {
+      "id": "p01",
+      "label": "positive",
+      "status": "hit",
+      "top_score": 0.9658381938934326
+    },
+    {
+      "id": "p02",
+      "label": "positive",
+      "status": "hit",
+      "top_score": 0.9370375275611877
+    },
+    {
+      "id": "p03",
+      "label": "positive",
+      "status": "hit",
+      "top_score": 0.9861582517623901
+    },
+    {
+      "id": "p04",
+      "label": "positive",
+      "status": "no_hit",
+      "top_score": 0.011805185116827488
+    },
+    {
+      "id": "p05",
+      "label": "positive",
+      "status": "hit",
+      "top_score": 0.8863531947135925
+    },
+    {
+      "id": "p06",
+      "label": "positive",
+      "status": "hit",
+      "top_score": 0.9951978325843811
+    },
+    {
+      "id": "p07",
+      "label": "positive",
+      "status": "hit",
+      "top_score": 0.9159353971481323
+    },
+    {
+      "id": "p08",
+      "label": "positive",
+      "status": "hit",
+      "top_score": 0.9945927262306213
+    },
+    {
+      "id": "p09",
+      "label": "positive",
+      "status": "no_hit",
+      "top_score": 0.0030650540720671415
+    },
+    {
+      "id": "p10",
+      "label": "positive",
+      "status": "no_hit",
+      "top_score": 0.3831051290035248
+    },
+    {
+      "id": "p11",
+      "label": "positive",
+      "status": "hit",
+      "top_score": 0.9414587020874023
+    },
+    {
+      "id": "p12",
+      "label": "positive",
+      "status": "no_hit",
+      "top_score": null
+    },
+    {
+      "id": "p13",
+      "label": "positive",
+      "status": "hit",
+      "top_score": 0.9978581070899963
+    },
+    {
+      "id": "p14",
+      "label": "positive",
+      "status": "hit",
+      "top_score": 0.9584000110626221
+    },
+    {
+      "id": "p15",
+      "label": "positive",
+      "status": "hit",
+      "top_score": 0.6961559653282166
+    },
+    {
+      "id": "p16",
+      "label": "positive",
+      "status": "hit",
+      "top_score": 0.9813374280929565
+    },
+    {
+      "id": "p17",
+      "label": "positive",
+      "status": "hit",
+      "top_score": 0.6832443475723267
+    },
+    {
+      "id": "p18",
+      "label": "positive",
+      "status": "hit",
+      "top_score": 0.9988924860954285
+    },
+    {
+      "id": "p19",
+      "label": "positive",
+      "status": "hit",
+      "top_score": 0.964408814907074
+    },
+    {
+      "id": "p20",
+      "label": "positive",
+      "status": "hit",
+      "top_score": 0.9422255754470825
+    },
+    {
+      "id": "p21",
+      "label": "positive",
+      "status": "hit",
+      "top_score": 0.9400033950805664
+    },
+    {
+      "id": "p22",
+      "label": "positive",
+      "status": "hit",
+      "top_score": 0.9996167421340942
+    },
+    {
+      "id": "n01",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": null
+    },
+    {
+      "id": "n02",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": null
+    },
+    {
+      "id": "n03",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": null
+    },
+    {
+      "id": "n04",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": null
+    },
+    {
+      "id": "n05",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": null
+    },
+    {
+      "id": "n06",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": null
+    },
+    {
+      "id": "n07",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": null
+    },
+    {
+      "id": "n08",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": null
+    },
+    {
+      "id": "n09",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": null
+    },
+    {
+      "id": "n10",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": 0.004393762908875942
+    },
+    {
+      "id": "n11",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": 0.13705956935882568
+    },
+    {
+      "id": "n12",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": 0.055499061942100525
+    },
+    {
+      "id": "n13",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": 0.0016542335506528616
+    },
+    {
+      "id": "n14",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": 0.011714889667928219
+    },
+    {
+      "id": "n15",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": 0.030603770166635513
+    },
+    {
+      "id": "n16",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": 0.0015603185165673494
+    },
+    {
+      "id": "n17",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": 0.0614093542098999
+    },
+    {
+      "id": "n18",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": 0.038629282265901566
+    },
+    {
+      "id": "n19",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": 0.0085151307284832
+    },
+    {
+      "id": "n20",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": 0.474124014377594
+    },
+    {
+      "id": "n21",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": null
+    },
+    {
+      "id": "n22",
+      "label": "negative",
+      "status": "no_hit",
+      "top_score": null
+    }
+  ],
+  "hit_example": {
+    "level": "beginner",
+    "answer": "可以把 Python 的列表想象成一排排队的小盒子，每个盒子里放一个数据。你想在队伍最后再放一个盒子，就用列表自带的 `append()` 功能。\n\n**技术说法：**  \nPython 的列表（`list`）是一种“有序、可变”的数据结构。“有序”指元素有先后顺序；“可变”指创建后还能增删改内容。`append()` 是列表的一个方法，可以理解为“列表自带的功能”，作用是把一个元素加到列表末尾。\n\n例子：\n\n```python\nfruits = [\"苹果\", \"香蕉\"]\nfruits.append(\"橙子\")\nprint(fruits)\n```\n\n结果是：\n\n```python\n['苹果', '香蕉', '橙子']\n```\n\n也就是 `\"橙子\"` 被加到了列表最后。\n\n用法记住：\n\n```python\n列表名.append(要添加的元素)\n```\n\n注意：`append()` 每次添加一个元素，并且会直接修改原来的列表。",
+    "retrieved_context": "[python.txt]\nPython 基础知识\n\nPython 是一种解释型、通用编程语言，语法简洁，常用于 Web 开发、数据分析、人工智能和自动化脚本。\n\n列表 list 是有序、可变的数据结构，可以使用 append() 在尾部添加元素。字典 dict 用键值对保存数据，例如 {\"name\": \"Alice\", \"age\": 20}。\n\n函数使用 def 定义。函数可以接收参数，也可以使用 return 返回结果。",
+    "sources": [
+      {
+        "source": "python.txt",
+        "page": null
+      }
+    ],
+    "retrieval_status": "hit"
+  },
+  "no_hit_examples": [
+    {
+      "level": "beginner",
+      "answer": "当前知识库中没有找到足够相关的资料。",
+      "retrieved_context": "",
+      "sources": [],
+      "retrieval_status": "no_hit"
+    },
+    {
+      "level": "beginner",
+      "answer": "当前知识库中没有找到足够相关的资料。",
+      "retrieved_context": "",
+      "sources": [],
+      "retrieval_status": "no_hit"
+    }
+  ],
+  "synonym_hit": true,
+  "no_hit_llm_calls": 0,
+  "agent_tools_compatible": true,
+  "finetune_unchanged": true
+}

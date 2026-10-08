@@ -1,0 +1,9 @@
+{
+  "model_name": "Qwen/Qwen2.5-3B-Instruct",
+  "baseline_file": "evaluation/formal_v1_comparison.json",
+  "output_dir": "evaluation/base_3b",
+  "load_in_4bit": true,
+  "bnb_4bit_quant_type": "nf4",
+  "bnb_4bit_compute_dtype": "bfloat16",
+  "device_map": "auto"
+}

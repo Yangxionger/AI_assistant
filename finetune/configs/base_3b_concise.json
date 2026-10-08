@@ -1,0 +1,6 @@
+{
+  "base_config": "configs/base_3b.json",
+  "output_dir": "evaluation/base_3b_concise",
+  "prompt_suffix": "请将回答控制在200～350字，直接回答问题。",
+  "diagnostic_max_new_tokens": 1536
+}

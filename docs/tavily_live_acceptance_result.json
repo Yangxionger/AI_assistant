@@ -1,0 +1,162 @@
+{
+  "status": "passed",
+  "environment": {
+    "env_path": "D:\\Code\\huawei-ai-24weeks\\projects\\ai-study-assistant\\.env",
+    "provider": "tavily",
+    "configuration_loaded": true,
+    "tavily_trust_env": "false"
+  },
+  "threshold": 0.5,
+  "ABC": {
+    "A": true,
+    "B": true,
+    "C": true
+  },
+  "tavily_requests": [
+    {
+      "status_code": 200,
+      "results": [
+        {
+          "title": "How to Analyze Deadlocks with SHOW ENGINE INNODB STATUS in MySQL",
+          "url": "https://oneuptime.com/blog/post/2026-03-31-mysql-how-to-analyze-deadlocks-with-show-engine-innodb-status-in-m/view",
+          "snippet": "The primary tool for deadlock analysis is the `SHOW ENGINE INNODB STATUS` command. It outputs detailed information about InnoDB internals, including the most recent deadlock.\n\n```\nSHOW ENGINE INNODB STATUS\\G\n```\n\nThe `\\G` modifier formats the output vertically, making it easier to read. The output is divided into sections: transactions, buffer pool, semaphores, and the LATEST DETECTED DEADLOCK block.\n\n## Reading the LATEST DETECTED DEADLOCK Section [...] ------------------------ LATEST DETECTED DEADLOCK ------------------------ 2024-05-10 14:32:11 0x7f5e3c002700  (1) TRANSACTION: TRANSACTION 421938, ACTIVE 2 sec starting index read mysql tables in use 1, locked 1 LOCK WAIT 3 lock struct(s), heap size 1136, 2 row lock(s) MySQL thread id 45, OS thread handle 140032..., query id 3291 localhost root updating UPDATE orders SET status = 'shipped' WHERE id = 101  (1) HOLDS THE LOCK(S): RECORD LOCKS space id 34 page no 4 n bits 72 index PRIMARY of [...] ## Summary\n\n`SHOW ENGINE INNODB STATUS` provides a detailed record of the most recent deadlock, including the transactions, locks held, and locks waited for. Enable `innodb_print_all_deadlocks` to log all deadlocks persistently. To prevent deadlocks, keep transactions short, access tables in a consistent order, and ensure proper indexing to reduce lock contention.\n\nShare this article\n\nNawaz Dhandala\n\n### Nawaz Dhandala\n\nAuthor\n\n@nawazdhandala • Mar 31, 2026 •"
+        },
+        {
+          "title": "Understanding and Resolving MySQL Deadlocks with the InnoDB Engine",
+          "url": "https://virtual-dba.com/blog/understanding-mysql-deadlocks-with-innodb-engine",
+          "snippet": "A multitude of information is contained in this command’s output. Knowing how to read it can be useful when debugging problems related to the InnoDB storage engine but what’s under `LATEST DETECTED DEADLOCK` is where we should focus our attention. Here we can see the details of our deadlock. It’ll show the most recent deadlock including the two conflicting queries and the locks they held. It’ll also inform you of which transaction (one or two) was rolled back and killed after the timeout is [...] ```\nSHOW GRANTS FOR CURRENT_USER; SHOW GRANTS FOR 'root'@'localhost'; \n```\n\nAnd if not, grant that access (if permitted to) using:\n\n```\nGRANT PROCESS, SELECT ON . TO 'username'@'%'; FLUSH PRIVILEGES; \n```\n\nAnd finally, to get a rough idea of what’s going on, we can run:\n\n```\nSHOW ENGINE INNODB STATUS \\G\n```\n\nMySQL Deadlocks InnoDB Engine latest detected deadlock output [...] To preface — in order to view these SQL statements causing deadlocks, the MySQL user needs to have been granted the process privilege. This privilege displays information about threads executing within the server. It not only enables the use of the `SHOW PROCESSLIST;` command but also the `SHOW ENGINE;` command. Both of which are vital to troubleshooting all sorts of issues in MySQL. In order to check whether or not the user has this privilege, you can run:"
+        },
+        {
+          "title": "MySQL Deadlock Detection - check deadlocks on database",
+          "url": "https://releem.com/blog/mysql-deadlock-detection",
+          "snippet": "## How to monitor deadlocks manually\n\nIf you want to manually check for a deadlock on your MySQL server, run the following command:\n\n```\nSHOW ENGINE INNODB STATUS\\G\n```\n\nLook for the section labeled LATEST DETECTED DEADLOCK. Examine the output for:"
+        }
+      ]
+    },
+    {
+      "status_code": 200,
+      "results": [
+        {
+          "title": "[Windows 11/10] 疑难解答 - 开机后出现BitLocker recovery画面/获取BitLocker恢复秘钥 | 官方支持 | ASUS 中国",
+          "url": "https://www.asus.com.cn/support/faq/1042922",
+          "snippet": "寻找BitLocker 恢复密钥\n\n如果恢复密钥是保存至您的Microsoft帐户，请从其它设备登入您的Microsoft帐户以取得BitLocker恢复密钥。\n\n \n\n1.请在其它设备开启网页浏览器，前往   并登入您的Microsoft帐户后，即可出现如下画面的BitLocker恢复密钥列表。\n\n \n\n注：如果您的电脑曾经使用公司或学校帐户登入组织，恢复密钥可能会存在该组织的帐户中，您可能可以直接寻找它，请参考后面的【通过组织帐户查找BitLocker恢复密钥】 。如果您无法存取，可能需要向该组织的系统管理员询问您的恢复密钥。\n\n2.比对画面中的Recovery Key ID（恢复密钥标识符），然后找到相对应的恢复密钥。\n\n3.在画面中输入相对应的恢复密钥，即可进入Windows 操作系统。\n\n \n\n通过组织帐户查找BitLocker恢复密钥：\n\n1.请在其它电脑开启网页浏览器，前往   并登录您的公司或学校账户后，点击【设备】①。\n\n \n\n展开您要寻找BitLocker恢复密钥的设备②，然后点击[查找Bitlocker密钥]③。 [...] 在 Microsoft 帐户中:在另一台设备上 登录到 Microsoft 帐户以查找恢复密钥。 如果你有一台支持自动设备加密的现代设备，则恢复密钥最有可能在你的 Microsoft 帐户中。 有关详细信息，请参阅 Windows 中的设备加密。  \n  注: 如果由另一个用户设置了设备或激活了 BitLocker 保护，则恢复密钥可能在该用户的 Microsoft 帐户中。\n 在打印输出上:在激活 BitLocker 时，可能打印了恢复密钥。 在存放与你的电脑相关的重要文件的位置查找。\n 在 U 盘上:将 U 盘插入锁定的电脑，然后按照说明进行操作。 如果你已在 U 盘上将密钥另存为文本文件，则使用另一台电脑阅读此文本文件。\n 在 Azure Active Directory 帐户中:如果设备曾使用工作或学校电子邮件帐户登录到组织，则恢复密钥可能存储在与Azure AD关联的组织帐户。 你或许可以直接访问它，也可能需要联系系统管理员来访问恢复密钥。\n 由系统管理员持有:如果设备已连接到域， (工作或学校设备) ，请向系统管理员请求恢复密钥。\n\n​ [...] 如果您遇到开机进入系统时出现BitLocker修复画面，这表示您电脑的硬盘已受BitLocker保护(硬盘被锁住)。当系统在维修以及其他因素下做过硬件变动或BIOS更新设置变动，都是可能发生BitLocker修复画面出现的原因，此时您需要输入BitLocker修复密钥才能解除。请参考以下疑难解答步骤，若您无法输入BitLocker修复密钥来解除保护，只能重新安装系统来解决。\n\n注: 关于BitLocker加密，这是一项由Microsoft提供的数据加密功能，旨在保护用户的隐私和个人资料安全。基于BitLocker的设计原理，所有加密密钥仅存储于用户的设备中，华硕无法访问、存取或管理这些加密信息。考虑个人资料安全至关重要，BitLocker的设计确保只有拥有正确解密密钥的人才能存取受保护的资料。\n\n注: 若您的硬盘有使用设备加密或BitLocker加密，当硬盘受保护时都有可能出现以下画面。了解更多设备加密与标准BitLocker加密。\n\n寻找BitLocker 恢复密钥"
+        },
+        {
+          "title": "查找 BitLocker 恢复密钥 | Microsoft Support",
+          "url": "https://support.microsoft.com/zh-cn/windows/security/encryption/find-your-bitlocker-recovery-key",
+          "snippet": "## 如果找不到恢复密钥，该怎么办？\n\n如果设备由组织管理，检查 IT 部门检索恢复密钥。\n\n如果找不到 BitLocker 恢复密钥，并且无法撤消导致需要它的任何更改，则必须使用 Windows 恢复选项之一重置设备。\n\n重置你的设备将删除所有文件。\n\n## 此信息是否有用?\n\n## 谢谢您的反馈! [...] 如果你的设备曾使用 工作或学校帐户登录到组织，则恢复密钥可以存储在该组织的帐户中。 你可能能够直接访问它，或者可能需要联系该组织的 IT 支持人员才能访问恢复密钥。\n\n在另一台设备上，打开 Web 浏览器并转到 \n\n使用你的工作或学校帐户登录\n\n选择“ 设备 ”，然后展开需要为其检索恢复密钥的设备\n\n工作或学校帐户的 BitLocker 恢复密钥的屏幕截图。\n\n工作或学校帐户的 BitLocker 恢复密钥的屏幕截图。\n\n选择“查看 BitLocker 密钥”选项\n\n使用密钥 ID 查找相关的恢复密钥，然后使用它解锁驱动器\n\n### 检查打印输出\n\n激活 BitLocker 时，你可能已打印恢复密钥。 查看与设备相关的重要文件的保留位置。\n\n例如，在以下打印输出中，突出显示了密钥 ID 和相对恢复密钥：\n\nBitLocker 恢复密钥打印输出的屏幕截图。\n\nBitLocker 恢复密钥打印输出的屏幕截图。\n\n### 检查 U 盘\n\n将 U 盘插入锁定的设备，然后按照说明进行操作。 如果将密钥保存为闪存驱动器上的文本文件，请使用其他设备来读取文本文件。 [...] 如果有多个恢复密钥，则恢复密钥 ID 有助于确定要使用的恢复密钥。\n\nBitLocker 恢复屏幕的屏幕截图，其中突出显示了密钥 ID。\n\nBitLocker 恢复屏幕的屏幕截图，其中突出显示了密钥 ID。\n\n## 步骤 2. 查找你的恢复密钥\n\n恢复密钥可能位于多个位置，具体取决于激活 BitLocker 时所做的选择。 展开每个部分以了解详细信息：\n\n### 在 Microsoft 帐户中查找恢复密钥\n\n如果 BitLocker 恢复密钥已备份到 Microsoft 帐户，请按照以下步骤检索它：\n\n在另一台设备上，打开 Web 浏览器并转到 \n\n使用 Microsoft 帐户登录并找到密钥 ID：\n\nMicrosoft帐户的 BitLocker 恢复密钥的屏幕截图。\n\nMicrosoft帐户的 BitLocker 恢复密钥的屏幕截图。\n\n使用相关的恢复密钥解锁驱动器\n\n注意\n\n### 在工作或学校帐户中查找恢复密钥"
+        },
+        {
+          "title": "为你的 Apple 账户设置恢复密钥 - 官方 Apple 支持 (中国)",
+          "url": "https://support.apple.com/zh-cn/109345",
+          "snippet": "# 为你的 Apple 账户设置恢复密钥\n\n恢复密钥是一项可选的安全功能，有助于提高 Apple 账户的安全性。如果你忘记了自己的 Apple 账户密码，恢复密钥可以协助你重新获得账户的访问权限。\n\n## 什么是恢复密钥？\n\n如果你设置了恢复密钥，并且在失去账户访问权限时无法提供这个密钥，你的账户将被永久锁定。\n\n恢复密钥是一个由 28 个字符组成的代码，你可以使用它以及受信任电话号码和 Apple 设备来协助你重新获得 Apple 账户的访问权限。如果你使用 iCloud 高级数据保护，恢复密钥还可以协助你访问经过端对端加密的 iCloud 数据。这是一个可选功能。\n\n设置恢复密钥后，Apple 的标准账户恢复流程就会关闭。\n\n 这种情况下，你必须使用恢复密钥和受信任电话号码来重设 Apple 账户密码。\n 你应该打印一份恢复密钥的副本或将恢复密钥写下来。如果你将它弄丢了，Apple 无法为你提供恢复密钥。\n 在没有恢复密钥的情况下，你可能无法访问自己 Apple 账户的所有数据。 [...] 这样可让你在账户恢复方法上获得更多控制权，并有助于防止攻击者访问和控制你的账户。另外，当你更改有关 Apple 账户的某些信息时，系统可能会要求你提供恢复密钥。例如，如果你添加新的受信任电话号码，系统会要求你提供恢复密钥。\n\n请妥善存放你的密钥副本，并考虑将密钥副本存放在多个地方。请勿将恢复密钥存储在 Apple 密码 App、iCloud 照片、备忘录或 iCloud 云盘中。一旦你无法访问自己的 Apple 账户，就无法打开这些 App 来查找恢复密钥了。\n\n## 在设置恢复密钥之前\n\n 确定一个安全的地方来存放恢复密钥的纸质副本。你还可将恢复密钥的副本交给一位值得信赖的家庭成员保管。\n 将你的设备更新到最新的软件版本。你需要使用 iOS 14、iPadOS 14 或 macOS Big Sur 或更高版本。\n 如果出现提示，请为你的 Apple 账户打开双重认证。\n 如果系统要求你为高级数据保护设置账户恢复方法，请决定是要使用恢复密钥还是恢复联系人。\n\n## 为你的 Apple 账户设置恢复密钥 [...] 1. 打开“设置”（或 Mac 上的“系统设置”），然后选取“[你的姓名]”。\n2. 轻点或点按“登录与安全”，然后轻点或点按“恢复密钥”。\n3. 轻点或点按“Remove Recovery Key”（移除恢复密钥）。\n\n发布日期："
+        }
+      ]
+    }
+  ],
+  "web_sources_match_tavily_metadata": true,
+  "tls_ssl_eof_error_count": 0,
+  "live": {
+    "local": {
+      "session_id": "web_acceptance_e9b064450a8b4c98a175d48e4e12dc6e",
+      "answer": "根据知识库资料：\n\n- **青禾同步协议的恢复口令**是：**青禾-6284**\n- **重试间隔**是：**31秒**\n\n补充说明：在需要执行同步恢复或验证时，使用该恢复口令；如果一次尝试未成功，应等待 **31秒** 后再进行下一次重试。实际使用时请以系统部署配置为准，并妥善保管口令，避免公开泄露。",
+      "sources": [
+        {
+          "type": "local",
+          "source": "uploads/web_local_a3fcb011e1c0.pdf",
+          "page": 2
+        }
+      ],
+      "retrieval_status": "hit",
+      "knowledge_source": "local"
+    },
+    "local_web_search_calls": 0,
+    "web": {
+      "session_id": "web_acceptance_e9b064450a8b4c98a175d48e4e12dc6e",
+      "answer": "在 MySQL InnoDB 中，查看最近一次检测到的死锁详情，应使用 `SHOW ENGINE INNODB STATUS` 命令（常写作 `SHOW ENGINE INNODB STATUS\\G`，其中 `\\G` 只是让输出纵向排列，便于阅读）。该命令会输出 InnoDB 内部状态，其中包含 `LATEST DETECTED DEADLOCK` 区块，显示最近一次死锁的详细信息，例如涉及的事务、冲突查询以及相关锁信息[1][2][3]。因此，重点查看输出中的 `LATEST DETECTED DEADLOCK` 部分即可获取最新死锁详情[1][2][3]。",
+      "sources": [
+        {
+          "type": "web",
+          "title": "How to Analyze Deadlocks with SHOW ENGINE INNODB STATUS in MySQL",
+          "url": "https://oneuptime.com/blog/post/2026-03-31-mysql-how-to-analyze-deadlocks-with-show-engine-innodb-status-in-m/view"
+        },
+        {
+          "type": "web",
+          "title": "Understanding and Resolving MySQL Deadlocks with the InnoDB Engine",
+          "url": "https://virtual-dba.com/blog/understanding-mysql-deadlocks-with-innodb-engine"
+        },
+        {
+          "type": "web",
+          "title": "MySQL Deadlock Detection - check deadlocks on database",
+          "url": "https://releem.com/blog/mysql-deadlock-detection"
+        }
+      ],
+      "retrieval_status": "no_hit",
+      "knowledge_source": "web"
+    },
+    "none": {
+      "session_id": "web_acceptance_e9b064450a8b4c98a175d48e4e12dc6e",
+      "answer": "当前没有找到足够可靠的资料。",
+      "sources": [],
+      "retrieval_status": "no_hit",
+      "knowledge_source": "none"
+    },
+    "real_searches": [
+      {
+        "question": "In MySQL InnoDB, which SQL command shows the latest detected deadlock details?",
+        "results": [
+          {
+            "title": "How to Analyze Deadlocks with SHOW ENGINE INNODB STATUS in MySQL",
+            "url": "https://oneuptime.com/blog/post/2026-03-31-mysql-how-to-analyze-deadlocks-with-show-engine-innodb-status-in-m/view",
+            "snippet": "The primary tool for deadlock analysis is the `SHOW ENGINE INNODB STATUS` command. It outputs detailed information about InnoDB internals, including the most recent deadlock.\n\n```\nSHOW ENGINE INNODB STATUS\\G\n```\n\nThe `\\G` modifier formats the output vertically, making it easier to read. The output is divided into sections: transactions, buffer pool, semaphores, and the LATEST DETECTED DEADLOCK block.\n\n## Reading the LATEST DETECTED DEADLOCK Section [...] ------------------------ LATEST DETECTED DEADLOCK ------------------------ 2024-05-10 14:32:11 0x7f5e3c002700  (1) TRANSACTION: TRANSACTION 421938, ACTIVE 2 sec starting index read mysql tables in use 1, locked 1 LOCK WAIT 3 lock struct(s), heap size 1136, 2 row lock(s) MySQL thread id 45, OS thread handle 140032..., query id 3291 localhost root updating UPDATE orders SET status = 'shipped' WHERE id = 101  (1) HOLDS THE LOCK(S): RECORD LOCKS space id 34 page no 4 n bits 72 index PRIMARY of [...] ## Summary\n\n`SHOW ENGINE INNODB STATUS` provides a detailed record of the most recent deadlock, including the transactions, locks held, and locks waited for. Enable `innodb_print_all_deadlocks` to log all deadlocks persistently. To prevent deadlocks, keep transactions short, access tables in a consistent order, and ensure proper indexing to reduce lock contention.\n\nShare this article\n\nNawaz Dhandala\n\n### Nawaz Dhandala\n\nAuthor\n\n@nawazdhandala • Mar 31, 2026 •"
+          },
+          {
+            "title": "Understanding and Resolving MySQL Deadlocks with the InnoDB Engine",
+            "url": "https://virtual-dba.com/blog/understanding-mysql-deadlocks-with-innodb-engine",
+            "snippet": "A multitude of information is contained in this command’s output. Knowing how to read it can be useful when debugging problems related to the InnoDB storage engine but what’s under `LATEST DETECTED DEADLOCK` is where we should focus our attention. Here we can see the details of our deadlock. It’ll show the most recent deadlock including the two conflicting queries and the locks they held. It’ll also inform you of which transaction (one or two) was rolled back and killed after the timeout is [...] ```\nSHOW GRANTS FOR CURRENT_USER; SHOW GRANTS FOR 'root'@'localhost'; \n```\n\nAnd if not, grant that access (if permitted to) using:\n\n```\nGRANT PROCESS, SELECT ON . TO 'username'@'%'; FLUSH PRIVILEGES; \n```\n\nAnd finally, to get a rough idea of what’s going on, we can run:\n\n```\nSHOW ENGINE INNODB STATUS \\G\n```\n\nMySQL Deadlocks InnoDB Engine latest detected deadlock output [...] To preface — in order to view these SQL statements causing deadlocks, the MySQL user needs to have been granted the process privilege. This privilege displays information about threads executing within the server. It not only enables the use of the `SHOW PROCESSLIST;` command but also the `SHOW ENGINE;` command. Both of which are vital to troubleshooting all sorts of issues in MySQL. In order to check whether or not the user has this privilege, you can run:"
+          },
+          {
+            "title": "MySQL Deadlock Detection - check deadlocks on database",
+            "url": "https://releem.com/blog/mysql-deadlock-detection",
+            "snippet": "## How to monitor deadlocks manually\n\nIf you want to manually check for a deadlock on your MySQL server, run the following command:\n\n```\nSHOW ENGINE INNODB STATUS\\G\n```\n\nLook for the section labeled LATEST DETECTED DEADLOCK. Examine the output for:"
+          }
+        ]
+      },
+      {
+        "question": "尚未公开的私有设备 ZQX-88268c822b25467987f8d9c89c80757e 的管理员恢复密钥是什么？",
+        "results": [
+          {
+            "title": "[Windows 11/10] 疑难解答 - 开机后出现BitLocker recovery画面/获取BitLocker恢复秘钥 | 官方支持 | ASUS 中国",
+            "url": "https://www.asus.com.cn/support/faq/1042922",
+            "snippet": "寻找BitLocker 恢复密钥\n\n如果恢复密钥是保存至您的Microsoft帐户，请从其它设备登入您的Microsoft帐户以取得BitLocker恢复密钥。\n\n \n\n1.请在其它设备开启网页浏览器，前往   并登入您的Microsoft帐户后，即可出现如下画面的BitLocker恢复密钥列表。\n\n \n\n注：如果您的电脑曾经使用公司或学校帐户登入组织，恢复密钥可能会存在该组织的帐户中，您可能可以直接寻找它，请参考后面的【通过组织帐户查找BitLocker恢复密钥】 。如果您无法存取，可能需要向该组织的系统管理员询问您的恢复密钥。\n\n2.比对画面中的Recovery Key ID（恢复密钥标识符），然后找到相对应的恢复密钥。\n\n3.在画面中输入相对应的恢复密钥，即可进入Windows 操作系统。\n\n \n\n通过组织帐户查找BitLocker恢复密钥：\n\n1.请在其它电脑开启网页浏览器，前往   并登录您的公司或学校账户后，点击【设备】①。\n\n \n\n展开您要寻找BitLocker恢复密钥的设备②，然后点击[查找Bitlocker密钥]③。 [...] 在 Microsoft 帐户中:在另一台设备上 登录到 Microsoft 帐户以查找恢复密钥。 如果你有一台支持自动设备加密的现代设备，则恢复密钥最有可能在你的 Microsoft 帐户中。 有关详细信息，请参阅 Windows 中的设备加密。  \n  注: 如果由另一个用户设置了设备或激活了 BitLocker 保护，则恢复密钥可能在该用户的 Microsoft 帐户中。\n 在打印输出上:在激活 BitLocker 时，可能打印了恢复密钥。 在存放与你的电脑相关的重要文件的位置查找。\n 在 U 盘上:将 U 盘插入锁定的电脑，然后按照说明进行操作。 如果你已在 U 盘上将密钥另存为文本文件，则使用另一台电脑阅读此文本文件。\n 在 Azure Active Directory 帐户中:如果设备曾使用工作或学校电子邮件帐户登录到组织，则恢复密钥可能存储在与Azure AD关联的组织帐户。 你或许可以直接访问它，也可能需要联系系统管理员来访问恢复密钥。\n 由系统管理员持有:如果设备已连接到域， (工作或学校设备) ，请向系统管理员请求恢复密钥。\n\n​ [...] 如果您遇到开机进入系统时出现BitLocker修复画面，这表示您电脑的硬盘已受BitLocker保护(硬盘被锁住)。当系统在维修以及其他因素下做过硬件变动或BIOS更新设置变动，都是可能发生BitLocker修复画面出现的原因，此时您需要输入BitLocker修复密钥才能解除。请参考以下疑难解答步骤，若您无法输入BitLocker修复密钥来解除保护，只能重新安装系统来解决。\n\n注: 关于BitLocker加密，这是一项由Microsoft提供的数据加密功能，旨在保护用户的隐私和个人资料安全。基于BitLocker的设计原理，所有加密密钥仅存储于用户的设备中，华硕无法访问、存取或管理这些加密信息。考虑个人资料安全至关重要，BitLocker的设计确保只有拥有正确解密密钥的人才能存取受保护的资料。\n\n注: 若您的硬盘有使用设备加密或BitLocker加密，当硬盘受保护时都有可能出现以下画面。了解更多设备加密与标准BitLocker加密。\n\n寻找BitLocker 恢复密钥"
+          },
+          {
+            "title": "查找 BitLocker 恢复密钥 | Microsoft Support",
+            "url": "https://support.microsoft.com/zh-cn/windows/security/encryption/find-your-bitlocker-recovery-key",
+            "snippet": "## 如果找不到恢复密钥，该怎么办？\n\n如果设备由组织管理，检查 IT 部门检索恢复密钥。\n\n如果找不到 BitLocker 恢复密钥，并且无法撤消导致需要它的任何更改，则必须使用 Windows 恢复选项之一重置设备。\n\n重置你的设备将删除所有文件。\n\n## 此信息是否有用?\n\n## 谢谢您的反馈! [...] 如果你的设备曾使用 工作或学校帐户登录到组织，则恢复密钥可以存储在该组织的帐户中。 你可能能够直接访问它，或者可能需要联系该组织的 IT 支持人员才能访问恢复密钥。\n\n在另一台设备上，打开 Web 浏览器并转到 \n\n使用你的工作或学校帐户登录\n\n选择“ 设备 ”，然后展开需要为其检索恢复密钥的设备\n\n工作或学校帐户的 BitLocker 恢复密钥的屏幕截图。\n\n工作或学校帐户的 BitLocker 恢复密钥的屏幕截图。\n\n选择“查看 BitLocker 密钥”选项\n\n使用密钥 ID 查找相关的恢复密钥，然后使用它解锁驱动器\n\n### 检查打印输出\n\n激活 BitLocker 时，你可能已打印恢复密钥。 查看与设备相关的重要文件的保留位置。\n\n例如，在以下打印输出中，突出显示了密钥 ID 和相对恢复密钥：\n\nBitLocker 恢复密钥打印输出的屏幕截图。\n\nBitLocker 恢复密钥打印输出的屏幕截图。\n\n### 检查 U 盘\n\n将 U 盘插入锁定的设备，然后按照说明进行操作。 如果将密钥保存为闪存驱动器上的文本文件，请使用其他设备来读取文本文件。 [...] 如果有多个恢复密钥，则恢复密钥 ID 有助于确定要使用的恢复密钥。\n\nBitLocker 恢复屏幕的屏幕截图，其中突出显示了密钥 ID。\n\nBitLocker 恢复屏幕的屏幕截图，其中突出显示了密钥 ID。\n\n## 步骤 2. 查找你的恢复密钥\n\n恢复密钥可能位于多个位置，具体取决于激活 BitLocker 时所做的选择。 展开每个部分以了解详细信息：\n\n### 在 Microsoft 帐户中查找恢复密钥\n\n如果 BitLocker 恢复密钥已备份到 Microsoft 帐户，请按照以下步骤检索它：\n\n在另一台设备上，打开 Web 浏览器并转到 \n\n使用 Microsoft 帐户登录并找到密钥 ID：\n\nMicrosoft帐户的 BitLocker 恢复密钥的屏幕截图。\n\nMicrosoft帐户的 BitLocker 恢复密钥的屏幕截图。\n\n使用相关的恢复密钥解锁驱动器\n\n注意\n\n### 在工作或学校帐户中查找恢复密钥"
+          },
+          {
+            "title": "为你的 Apple 账户设置恢复密钥 - 官方 Apple 支持 (中国)",
+            "url": "https://support.apple.com/zh-cn/109345",
+            "snippet": "# 为你的 Apple 账户设置恢复密钥\n\n恢复密钥是一项可选的安全功能，有助于提高 Apple 账户的安全性。如果你忘记了自己的 Apple 账户密码，恢复密钥可以协助你重新获得账户的访问权限。\n\n## 什么是恢复密钥？\n\n如果你设置了恢复密钥，并且在失去账户访问权限时无法提供这个密钥，你的账户将被永久锁定。\n\n恢复密钥是一个由 28 个字符组成的代码，你可以使用它以及受信任电话号码和 Apple 设备来协助你重新获得 Apple 账户的访问权限。如果你使用 iCloud 高级数据保护，恢复密钥还可以协助你访问经过端对端加密的 iCloud 数据。这是一个可选功能。\n\n设置恢复密钥后，Apple 的标准账户恢复流程就会关闭。\n\n 这种情况下，你必须使用恢复密钥和受信任电话号码来重设 Apple 账户密码。\n 你应该打印一份恢复密钥的副本或将恢复密钥写下来。如果你将它弄丢了，Apple 无法为你提供恢复密钥。\n 在没有恢复密钥的情况下，你可能无法访问自己 Apple 账户的所有数据。 [...] 这样可让你在账户恢复方法上获得更多控制权，并有助于防止攻击者访问和控制你的账户。另外，当你更改有关 Apple 账户的某些信息时，系统可能会要求你提供恢复密钥。例如，如果你添加新的受信任电话号码，系统会要求你提供恢复密钥。\n\n请妥善存放你的密钥副本，并考虑将密钥副本存放在多个地方。请勿将恢复密钥存储在 Apple 密码 App、iCloud 照片、备忘录或 iCloud 云盘中。一旦你无法访问自己的 Apple 账户，就无法打开这些 App 来查找恢复密钥了。\n\n## 在设置恢复密钥之前\n\n 确定一个安全的地方来存放恢复密钥的纸质副本。你还可将恢复密钥的副本交给一位值得信赖的家庭成员保管。\n 将你的设备更新到最新的软件版本。你需要使用 iOS 14、iPadOS 14 或 macOS Big Sur 或更高版本。\n 如果出现提示，请为你的 Apple 账户打开双重认证。\n 如果系统要求你为高级数据保护设置账户恢复方法，请决定是要使用恢复密钥还是恢复联系人。\n\n## 为你的 Apple 账户设置恢复密钥 [...] 1. 打开“设置”（或 Mac 上的“系统设置”），然后选取“[你的姓名]”。\n2. 轻点或点按“登录与安全”，然后轻点或点按“恢复密钥”。\n3. 轻点或点按“Remove Recovery Key”（移除恢复密钥）。\n\n发布日期："
+          }
+        ]
+      }
+    ],
+    "same_thread_sources_reset": true,
+    "threshold": 0.5,
+    "status": "passed",
+    "original_knowledge_preserved": true,
+    "finetune_unchanged": true,
+    "test_upload_cleaned": true
+  },
+  "test_count": 5,
+  "failures": 0,
+  "errors": 0,
+  "regressions": {
+    "retrieval_gate_test_result.json": "passed",
+    "knowledge_upload_v1_test_result.json": "passed",
+    "pdf_upload_test_result.json": "passed",
+    "rag_sources_test_result.json": "passed"
+  }
+}

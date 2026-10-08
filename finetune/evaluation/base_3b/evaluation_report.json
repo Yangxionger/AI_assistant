@@ -1,0 +1,53 @@
+{
+  "mode": "evaluate",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "status": "success",
+  "started_at": "2026-10-06T00:22:16",
+  "cuda_available": true,
+  "memory_before_mib": [
+    1286,
+    8188
+  ],
+  "adapter_loaded": false,
+  "tokenizer_loaded": true,
+  "model_loaded": true,
+  "loaded_in_4bit": true,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "bf16_supported": true,
+  "hf_device_map": {
+    "actual_tensor_device_0": "cuda:0"
+  },
+  "model_memory_footprint_mib": 1916.96,
+  "memory_after_load_mib": [
+    3557,
+    8188
+  ],
+  "native_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "effective_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "all_18_prompt_text_and_token_ids_match_v1": true,
+  "summary": {
+    "successful_generations": 18,
+    "total_questions": 18,
+    "mean_generated_tokens_including_stop": 512,
+    "mean_answer_characters": 969.56,
+    "answers_reaching_512_tokens": 18,
+    "empty_answers": 0,
+    "flag_counts": {
+      "token_limit_reached_possible_truncation": 18,
+      "repeated_lines_manual_review": 2,
+      "invalid_character": 1
+    },
+    "total_inference_seconds": 406.28
+  },
+  "formal_v1_all_files_unchanged": true,
+  "v1_comparison_unchanged": true,
+  "elapsed_seconds_including_load": 415.69,
+  "torch_peak_allocated_mib": 2161.16,
+  "torch_peak_reserved_mib": 2222.0,
+  "whole_gpu_peak_sampled_mib": 3728,
+  "memory_after_mib": [
+    3556,
+    8188
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "mode": "load",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "status": "success",
+  "started_at": "2026-10-06T00:21:26",
+  "cuda_available": true,
+  "memory_before_mib": [
+    1259,
+    8188
+  ],
+  "adapter_loaded": false,
+  "tokenizer_loaded": true,
+  "model_loaded": true,
+  "loaded_in_4bit": true,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "bf16_supported": true,
+  "hf_device_map": {
+    "actual_tensor_device_0": "cuda:0"
+  },
+  "model_memory_footprint_mib": 1916.96,
+  "memory_after_load_mib": [
+    3508,
+    8188
+  ],
+  "native_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "effective_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "formal_v1_all_files_unchanged": true,
+  "v1_comparison_unchanged": true,
+  "elapsed_seconds_including_load": 9.06,
+  "torch_peak_allocated_mib": 2132.41,
+  "torch_peak_reserved_mib": 2160.0,
+  "whole_gpu_peak_sampled_mib": 3508,
+  "memory_after_mib": [
+    3514,
+    8188
+  ]
+}

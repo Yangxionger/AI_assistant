@@ -1,0 +1,54 @@
+# Local configuration; keep the public template.
+.env
+.env.*
+!.env.example
+
+# Python environments and generated caches.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+venv/
+.venv/
+.venv-*/
+env/
+.vscode/
+
+# Runtime knowledge, database and local tooling.
+knowledge/uploads/
+qdrant_data/
+knowledge_state.json
+work/
+
+# Model/download caches and binary weights.
+.cache/
+huggingface_cache/
+hf_cache/
+.huggingface/
+models--*/
+datasets--*/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.gguf
+*.onnx
+checkpoint*/
+qwen_lora_output/
+finetune/output/
+
+# Training corpora and backups stay local; retain code and evaluation reports.
+finetune/data/*.jsonl
+finetune/data/fineweb_prepared_*/
+finetune/data/script_backup_*/
+finetune/data/fineweb_audit_*/*.jsonl
+finetune/data/fineweb_audit_*/*.tar.gz
+
+# Runtime logs and disposable files; PDF test fixtures remain visible.
+*.log
+*.tmp
+*.temp
+*.bak
+.upload-*
+.previous-*
+knowledge_state-*.tmp
