@@ -117,15 +117,13 @@ DEEPSEEK_API_KEY=your_deepseek_api_key_here
 WEB_SEARCH_PROVIDER=tavily
 TAVILY_API_KEY=your_tavily_api_key_here
 TAVILY_TRUST_ENV=false
-HF_HOME=D:/Code/huggingface_cache
-HF_HUB_CACHE=D:/Code/huggingface_cache/hub
 ```
 
 `llm.py` 显式加载项目 `.env`；不存在时兼容回退上级旧配置。已有进程环境变量优先，不被 dotenv 覆盖。修改 `.env` 后重启后端。
 
 Tavily 默认 `TAVILY_TRUST_ENV=true`，使用环境/系统代理；模板为本项目已验证可用的直连设置 false，仅影响 Tavily 请求，仍校验证书。如果网络必须走代理，改回 true。DeepSeek 的连接方式不受此开关影响。
 
-HF 缓存路径可按机器调整，建议放到仓库外。独立 finetune 脚本不加载后端 `.env`，需在运行前设置对应终端环境变量；部分历史 3B 实验还有本机路径断言。
+模板不指定 Hugging Face 缓存路径，未设置时使用库的默认缓存位置。如果需要指定磁盘，请在自己的 `.env` 或启动前的环境变量中设置 `HF_HOME`，必要时设置 `HF_HUB_CACHE`；使用本机实际路径并放在仓库外，不要照搬历史报告中的路径。独立 finetune 脚本不加载后端 `.env`，需在运行前设置对应终端环境变量；部分历史 3B 实验仍有本机路径断言。
 
 ### 启动
 
